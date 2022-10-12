@@ -9,7 +9,8 @@ B = np.array([
 C = np.mean(B,1)
 
 for i in range(np.size(B,0)):
-    B[i] = B[i] - C[i]
+    B[i] -= C[i]
+
 
 for i in range(np.size(B,0)):
     for j in range(np.size(B,1)):
